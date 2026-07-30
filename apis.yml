@@ -1,7 +1,32 @@
 aid: kets
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/kets.png
 name: Kets
-description: Kets is a company surfaced as a portfolio company of speedinvest and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  KETS Quantum Security is a Bristol, UK deep-tech company (incorporated 2016)
+  building chip-based quantum-safe encryption and networking hardware. Its
+  product line spans Quantum Key Distribution (QKD), Quantum Random Number
+  Generators (QRNG), and the KETS KORE sub-system, delivering security grounded
+  in the laws of physics rather than computational complexity. KETS technology
+  hardens telecommunications networks, satellite and aerospace communications
+  (including Airbus collaborations), data-center backups, and critical
+  infrastructure control systems against the emerging threat of quantum
+  computing. Backed by European quantum-specialist venture investors including
+  Speedinvest and supported by multiple UK government funding awards, KETS is
+  a hardware and photonics company; it does not currently publish a public API,
+  SDK, or developer portal. This profile was added to the API Evangelist network
+  as a Speedinvest portfolio lead and enriched with identity and domain-security
+  signals.
 url: https://raw.githubusercontent.com/api-evangelist/kets/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +36,35 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Quantum Security
+- Cybersecurity
+- Quantum Key Distribution
+- Quantum Random Number Generator
+- Post-Quantum Cryptography
+- Encryption
+- Photonics
+- Hardware
+- Deep Tech
 apis: []
+common:
+- type: DomainSecurity
+  url: security/kets-domain-security.yml
+- type: Website
+  url: https://kets-quantum.com
+- type: About
+  url: https://kets-quantum.com/about-us/
+- type: Blog
+  url: https://kets-quantum.com/news-insight/
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
